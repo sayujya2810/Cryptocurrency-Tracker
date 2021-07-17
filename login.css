@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Montserrat';
+}
+
+.card , #login{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+h1{
+    font-weight: 550;
+    letter-spacing: 2.5px;
+    margin-bottom: 1rem;
+
+}
+
+#login{
+    background-color: rgb(77, 77, 255);
+    box-shadow: 1px 1px 3px black;
+    padding: 4rem 6rem 6rem 6rem;
+    position: relative;
+    border-radius: 0.55rem;
+
+}
+
+#login label, #login button{
+    margin-top: 0.75rem;
+}
+
+#login label{
+    font-size: 18px;
+}
+
+#login .tnc-container label{
+    font-size: 13px;
+}
+
+button{
+    border-radius: 5px;
+    height: 1.5rem;
+    width: 4rem;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+#login input{
+    padding: 0.25rem;
+    border-radius: 4px;
+    border: none;
+    margin-top: 0.5rem
+}
+
+#login .tnc-container{
+    margin-top: 0.5rem;
+}
