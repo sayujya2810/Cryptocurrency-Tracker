@@ -51,15 +51,32 @@ window.addEventListener('load', () =>{
 let downBtn = document.querySelector(".fa-chevron-down");
 let btc = document.querySelector("#btc");
 
-btc.animate(btc,"1s","ease")
+btc.style.transition = "all 500ms ease";
 
-function myFunction() {
-    if (btc.style.display === "none") {
-      btc.style.display = "block";
-      downBtn.style.transform = "rotate(180deg)";
-      downBtn.style.transition = "all 0.5s ease";
-    } else {
-      btc.style.display = "none";
-      downBtn.style.transform = "rotate(0deg)";
+// function myFunction() {
+//     if (btc.style.display === "none") {
+//       btc.style.display = "block";
+//       downBtn.style.transform = "rotate(180deg)";
+//       downBtn.style.transition = "all 0.5s ease";
+//     } else {
+//       btc.style.display = "none";
+//       downBtn.style.transform = "rotate(0deg)";
+//     }
+// }
+btc.classList.add("hideContents");
+
+
+function myFunction(){
+    if(btc.classList == "hideContents")
+    {
+        btc.classList.remove("hideContents");
+        btc.classList.add("showContents");
+        downBtn.style.transform = "rotate(180deg)";
+        downBtn.style.transition = "all 0.5s ease";
+    }
+    else if(btc.classList == "showContents"){
+        downBtn.style.transform = "rotate(0deg)";
+        btc.classList.remove("showContents");
+        btc.classList.add("hideContents");
     }
 }

@@ -63,10 +63,14 @@ ol{
 
 .hideContents{
     display: none;
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 .showContents{
     display: unset;
+    opacity: 1;
+    transition: all 1s ease;
 }
 
 i{
