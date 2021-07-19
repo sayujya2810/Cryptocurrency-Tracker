@@ -51,13 +51,15 @@ window.addEventListener('load', () =>{
 let downBtn = document.querySelector(".fa-chevron-down");
 let btc = document.querySelector("#btc");
 
-btc.style.display === "none"
-
+btc.animate(btc,"1s","ease")
 
 function myFunction() {
     if (btc.style.display === "none") {
       btc.style.display = "block";
+      downBtn.style.transform = "rotate(180deg)";
+      downBtn.style.transition = "all 0.5s ease";
     } else {
       btc.style.display = "none";
+      downBtn.style.transform = "rotate(0deg)";
     }
-  }
+}
